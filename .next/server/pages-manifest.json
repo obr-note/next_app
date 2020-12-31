@@ -2,6 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/fire_add": "pages/fire_add.js",
-  "/fire": "pages/fire.js"
+  "/address": "pages/address.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
+  "/address_add": "pages/address_add.js",
+  "/address_show": "pages/address_show.js"
 }

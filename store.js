@@ -21,12 +21,18 @@ try {
 }
 export default fireapp;
 
-const initial = {}
+const initial = {
+  login: false,
+  username: '(click here)',
+  email: '',
+  data: [],
+  items: []
+}
 
 function fireReducer(state = initial, action){
   switch (action.type){
-    case 'TESTACTION':
-      return state;
+    case 'UPDATE_USER':
+      return action.value;
     default:
       return state;
   }
@@ -35,34 +41,3 @@ function fireReducer(state = initial, action){
 export function initStore(state = initial){
   return createStore(fireReducer, state, applyMiddleware(thunkMiddleware))
 }
-
-// const initial = {
-//   message: 'START',
-//   count: 0
-// }
-
-// function counterReducer (state = initial, action){
-//   switch (action.type){
-//     case 'INCREMENT':
-//       return {
-//         message: 'INCREMENT',
-//         count: state.count + 1
-//       };
-//     case 'DECREMENT':
-//       return {
-//         message: 'DECREMENT',
-//         count: state.count - 1
-//       };
-//     case 'RESET':
-//       return {
-//         message: 'RESET',
-//         count: initial.count
-//       };
-//     default:
-//       return state;
-//   }
-// }
-
-// export function initStore(state = initial){
-//   return createStore(counterReducer, state, applyMiddleware(thunkMiddleware))
-// }

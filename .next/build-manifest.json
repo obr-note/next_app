@@ -24,15 +24,25 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/fire": [
+    "/address": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/fire.js"
+      "static/chunks/pages/address.js"
     ],
-    "/fire_add": [
+    "/address_add": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/fire_add.js"
+      "static/chunks/pages/address_add.js"
+    ],
+    "/address_show": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/address_show.js"
+    ],
+    "/next/dist/pages/_error": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/next/dist/pages/_error.js"
     ]
   },
   "ampFirstPages": []
